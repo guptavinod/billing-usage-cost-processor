@@ -34,7 +34,8 @@ public class UsageCostDetail {
 		this.dataCost = dataCost;
 	}
 
+	@Override
 	public String toString() {
-		return "{\"userId\": \""+this.getUserId() + "\", \"callCost\": \""+ this.getCallCost()+"\", \"dataCost\": \"" + this.getDataCost()+ "\" }";
+		return "UsageCostDetail [userId=" + userId + ", callCost=" + callCost + ", dataCost=" + dataCost + "]";
 	}
 }

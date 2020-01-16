@@ -24,6 +24,11 @@ public class UsageCostProcessor {
 		usageCostDetail.setUserId(usageDetail.getUserId());
 		usageCostDetail.setCallCost(usageDetail.getDuration() * this.ratePerSecond);
 		usageCostDetail.setDataCost(usageDetail.getData() * this.ratePerMB);
+		
+		System.out.println("=============================");
+		System.out.println(usageCostDetail);
+		System.out.println("=============================");
+		
 		return usageCostDetail;
 	}
 }
